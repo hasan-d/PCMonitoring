@@ -1,0 +1,20 @@
+# Visual Studio temp
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Build folders
+bin/
+obj/
+
+# Rider
+.idea/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Windows
+Thumbs.db
+Desktop.ini
