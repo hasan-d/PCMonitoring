@@ -1,0 +1,6 @@
+services:
+  pcmonitoring:
+    build: .
+    container_name: pcmonitoring
+    isolation: process
+    restart: unless-stopped
