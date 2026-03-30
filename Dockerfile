@@ -5,8 +5,8 @@ WORKDIR /src
 COPY ["PCmonitoring/PCmonitoring.csproj", "PCmonitoring/"]
 RUN dotnet restore "PCmonitoring/PCmonitoring.csproj"
 
-COPY . .
-WORKDIR "/src/PCmonitoring"
+COPY PCmonitoring/ PCmonitoring/
+WORKDIR /src/PCmonitoring
 RUN dotnet publish -c Release -o /app/publish
 
 # Runtime stage
